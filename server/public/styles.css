@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font here */
+}
+
+.app {
+    background-image: url('./img/cloudy-sm.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 25px;
+    transition: 0.4 ease-out;
+}
+
+.app.sunny {
+    background-image: url('./img/sunny-sm.jpg');
+}
+
+.app.rainy {
+    background-image: url('./img/rainy-sm.jpg');
+}
+
+.search {
+    background-color: rgba(55, 58, 64, 0.25);
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding: 25px;
+    text-align: center;
+    width: 100%
+}
+
+.search form {
+    width: 100%;
+}
+
+.search input {
+    /* display: block; */
+    appearance: none;
+    background: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #000;
+    outline: none;
+    padding: 8px;
+}
+
+.search input:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.search input[type=submit] {
+    border-bottom-right-radius: 3px;
+    border-left: none;
+    border-top-right-radius: 3px;
+    width: 25%;
+}
+
+.search input[type=text] {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 75%;
+}
